@@ -5,8 +5,29 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #fcb69f;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+
+main {
+  background-color: #ffd6c0;
+  padding-bottom: 15%;
+}
+
+footer {
+  background-color: #ffecd2;
+  border-top: 5px solid white;
+  border-top-style: dashed;
+  padding-top: 10px;
+}
+
 .fuentePrincipal {
-  font-family: "Poppins" sans-serif;
+  font-family: Poppins sans-serif;
   font-size: 4rem;
   color: gray;
   text-align: center;
@@ -15,21 +36,41 @@
 
 .fuenteSecundaria {
   font-size: 2.5rem;
-  font-family: "Shadows Into Light Two";
+  font-family: Shadows Into Light Two;
   text-decoration: underline;
   text-align: start;
   color: gray;
 }
 
 .texto {
-  font-family: "Shadows Into Light Two";
+  font-family: Shadows Into Light Two;
   font-size: 1.5rem;
-  color: gray;
 }
 
 .descripcionImg {
-  font-family: "Shadows Into Light Two";
+  font-family: Shadows Into Light Two;
   font-size: 1rem;
+}
+
+.lista {
+  font-family: Gloria Hallelujah;
+  list-style-type: none;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 5px;
+}
+
+.lista .listaItem {
+  color: black;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+.lista .listaItem a {
+  color: black;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 0.8rem;
 }
 
 .anclaFooter {
@@ -37,9 +78,10 @@
   border-style: outset;
 }
 
-.comentarios a {
-  color: white;
-  text-decoration-line: none;
+.navegacion .listaNav .listaItem a {
+  color: grey;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .box {
@@ -94,37 +136,16 @@
   margin-top: 50px;
 }
 
-.lista {
-  font-family: "Gloria Hallelujah";
-  list-style-type: none;
-  font-size: 1rem;
-  color: gray;
-  margin-top: 5px;
-}
-.lista .listaItem {
-  color: black;
-  font-size: 0.8rem;
-  margin-left: 20px;
-}
-.lista .listaItem a {
-  color: black;
-  text-decoration-line: none;
-  font-size: 0.8rem;
+.divVideo {
+  width: 40%;
+  height: 40%;
+  border: 10px solid black;
+  border-style: groove;
 }
 
-.divIcon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin: 4rem;
-}
-.divIcon a i {
-  color: white;
-  font-size: 2rem;
-  background-color: gray;
-  padding: 10px;
-  border: 3px solid gray;
-  border-radius: 100px;
+.divVideo video {
+  width: 100%;
+  height: 100%;
 }
 
 .divParrafo {
@@ -133,67 +154,11 @@
   margin: 0px 20px 15px;
 }
 
-header {
-  background-color: #fcb69f;
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-  font-size: 1.2rem;
-}
-
-main {
-  background-color: #ffd6c0;
-  padding-bottom: 15%;
-}
-
-footer {
-  background-color: #ffecd2;
-  border-top: 5px solid white;
-  border-top-style: dashed;
-  padding-top: 10px;
-}
-
-.divImgSobre {
-  width: 300px;
-  height: 400px;
-  margin: 30px 10px;
-}
-.divImgSobre img {
-  width: 100%;
-  height: 100%;
-}
-.divImgSobre h3 {
-  text-align: center;
-  text-decoration-line: underline;
-}
-
-.divImgFamilia {
-  width: 400px;
-  height: 300px;
-  margin: 30px 10px;
-  border: 5px solid black;
-  border-style: groove;
-}
-.divImgFamilia img {
-  width: 100%;
-  height: 100%;
-}
-
-.divVideo {
-  width: 40%;
-  height: 40%;
-  border: 10px solid black;
-  border-style: groove;
-}
-.divVideo video {
-  width: 100%;
-  height: 100%;
-}
-
 .divImgPrincipal {
   width: 100%;
   height: 50%;
 }
+
 .divImgPrincipal img {
   height: 100%;
   width: 100%;
@@ -205,6 +170,7 @@ footer {
   border: 10px solid white;
   margin: 30px 10px;
 }
+
 .divImgIndex img {
   width: 100%;
   height: 100%;
@@ -214,6 +180,7 @@ footer {
   width: 85%;
   height: 85%;
 }
+
 .divImgIndexMain img {
   width: 100%;
   height: 100%;
@@ -224,6 +191,7 @@ footer {
   height: 70vh;
   padding-left: 70px;
 }
+
 .divImgCarousel img {
   width: 100%;
   height: 100%;
@@ -242,23 +210,59 @@ footer {
   border: 10px solid white;
   margin: 30px 10px;
 }
+
 .divImgAv img {
   width: 100%;
   height: 100%;
 }
+
 .divImgAv iframe {
   width: 100%;
   height: 100%;
 }
 
-.fuenteSecundaria_404 {
-  font-family: "Shadows Into Light Two";
-  text-align: center;
-  color: rgba(0, 0, 255, 0.61);
+.divIcon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 4rem;
 }
-.fuenteSecundaria_404 h1 {
-  font-size: 10rem;
-}
-.fuenteSecundaria_404 h2 {
+
+.divIcon a i {
+  color: white;
   font-size: 2rem;
+  background-color: gray;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 100px;
+}
+
+.divImgSobre {
+  width: 300px;
+  height: 400px;
+  margin: 30px 10px;
+}
+
+.divImgSobre img {
+  width: 100%;
+  height: 100%;
+}
+
+.divImgSobre h3 {
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.divImgFamilia {
+  width: 400px;
+  height: 300px;
+  margin: 30px 10px;
+  border: 5px solid black;
+  border-style: groove;
+}
+
+.divImgFamilia img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=estilos.css.map */
